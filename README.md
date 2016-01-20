@@ -1,2 +1,23 @@
 # Clipboard-Fill
-Sketch plugin to paste an image from your clipboard as the fill for any shape
+Sketch plugin to paste whatever image is on your clipboard as the fill for any shape.
+
+
+## Installation
+
+1. Open Sketch and choose Plugins > Reveal Plugins Folder.
+2. Download this project and place the folder inside the Plugins directory.
+
+
+## Usage
+1. Make a screenshot or copy an image to your clipboard
+2. Select 1 or more shapes in Sketch
+3. Run the plugin! 
+
+
+## Contact
+
+Scott: [@ScottSavarie](https://www.twitter.com/scottsavarie)
+Stijn: [@StijnEversdijk](https://www.twitter.com/StijnEversdijk)
+
+### Credit
+Stijn and I made this out of frustration one day when we had to copy and paste a lot of images into lists. 
