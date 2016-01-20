@@ -1,7 +1,7 @@
 # Clipboard-Fill
 Sketch plugin to paste whatever image is on your clipboard as the fill for any shape.
 
-(http://g.recordit.co/CCUzb1W47g.gif)
+![img](http://g.recordit.co/CCUzb1W47g.gif)
 
 ## Installation
 
