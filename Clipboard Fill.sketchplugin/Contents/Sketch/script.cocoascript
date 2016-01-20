@@ -1,0 +1,27 @@
+var onRun = function(context) {
+ var selectedLayers = context.selection;
+var layersIndex = selectedLayers.count();
+if(selectedLayers.count() > 0){
+	var pasteBoard = NSPasteboard.generalPasteboard();
+	var imgData = pasteBoard.dataForType(NSPasteboardTypePNG);
+	if(imgData){
+		for (var i = 0; i < layersIndex; i++){
+			log("looping");
+			var layer = selectedLayers[i];
+			var fill = layer.style().fills().firstObject();
+			fill.setFillType(4);  
+			image = [[NSImage alloc] initWithData:imgData];
+			layer.style().fills().firstObject().setPatternImage(image);                                             
+			layer.style().fills().firstObject().setPatternFillType(1);	
+		}
+	}
+	else{
+		var doc = context.document;
+		doc.showMessage("There’s no image on your clipboard!");
+	}
+}
+else{
+	var doc = context.document;
+	doc.showMessage("You didn’t select a layer!");
+}
+};

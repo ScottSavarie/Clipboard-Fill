@@ -1,0 +1,23 @@
+{
+  "author" : "",
+  "commands" : [
+    {
+      "script" : "script.cocoascript",
+      "handler" : "onRun",
+      "shortcut" : "ctrl alt cmd v",
+      "name" : "Clipboard Fill ",
+      "identifier" : "clipboard fill "
+    }
+  ],
+  "menu" : {
+    "items" : [
+      "clipboard fill "
+    ],
+    "title" : "Clipboard Fill "
+  },
+  "identifier" : "com.example.sketch.7ee74bdc-1af8-4b23-bfc8-f051f8c64992",
+  "version" : "1.0",
+  "description" : "",
+  "authorEmail" : "",
+  "name" : "Clipboard Fill "
+}
