@@ -1,9 +1,10 @@
 var onRun = function(context) {
- var selectedLayers = context.selection;
+var selectedLayers = context.selection;
 var layersIndex = selectedLayers.count();
 if(selectedLayers.count() > 0){
 	var pasteBoard = NSPasteboard.generalPasteboard();
 	var imgData = pasteBoard.dataForType(NSPasteboardTypePNG);
+	var imgTiffData = pasteBoard.dataForType(NSPasteboardTypeTIFF);
 	if(imgData){
 		for (var i = 0; i < layersIndex; i++){
 			log("looping");
@@ -11,6 +12,17 @@ if(selectedLayers.count() > 0){
 			var fill = layer.style().fills().firstObject();
 			fill.setFillType(4);  
 			image = [[NSImage alloc] initWithData:imgData];
+			layer.style().fills().firstObject().setPatternImage(image);                                             
+			layer.style().fills().firstObject().setPatternFillType(1);	
+		}
+	}
+	else if(imgTiffData){
+		for (var i = 0; i < layersIndex; i++){
+			log("looping");
+			var layer = selectedLayers[i];
+			var fill = layer.style().fills().firstObject();
+			fill.setFillType(4);  
+			image = [[NSImage alloc] initWithData:imgTiffData];
 			layer.style().fills().firstObject().setPatternImage(image);                                             
 			layer.style().fills().firstObject().setPatternFillType(1);	
 		}
