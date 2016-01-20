@@ -4,7 +4,7 @@
     {
       "script" : "script.cocoascript",
       "handler" : "onRun",
-      "shortcut" : "ctrl alt cmd v",
+      "shortcut" : "ctrl alt v",
       "name" : "Clipboard Fill ",
       "identifier" : "clipboard fill "
     }
