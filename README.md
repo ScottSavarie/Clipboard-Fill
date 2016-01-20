@@ -10,9 +10,9 @@ Sketch plugin to paste whatever image is on your clipboard as the fill for any s
 
 
 ## Usage
-1. Make a screenshot or copy an image to your clipboard
+1.  Make a screenshot where you copy selected area to clipboard *(shift + ctrl + cmd + 4)*
 2. Select 1 or more shapes in Sketch
-3. Run the plugin! 
+3. Run the plugin *(ctrl + alt + cmd + v)*
 
 
 ## Contact
