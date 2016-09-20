@@ -9,9 +9,10 @@ if(selectedLayers.count() > 0){
     for (var i = 0; i < layersIndex; i++){
       var layer = selectedLayers[i];
       var fill = layer.style().fills().firstObject();
-      fill.setFillType(4);
+      fill.setFillType(0);
       image = [[NSImage alloc] initWithData:imgData];
       fill.setImage(MSImageData.alloc().initWithImage_convertColorSpace(image, false));
+      layer.style().fills().firstObject().setPatternFillType(1);
 
     }
   }
@@ -19,9 +20,10 @@ if(selectedLayers.count() > 0){
     for (var i = 0; i < layersIndex; i++){
       var layer = selectedLayers[i];
       var fill = layer.style().fills().firstObject();
-      fill.setFillType(4);
+      fill.setFillType(0);
       image = [[NSImage alloc] initWithData:imgTiffData];
       fill.setImage(MSImageData.alloc().initWithImage_convertColorSpace(image, false));
+      layer.style().fills().firstObject().setPatternFillType(1);
     }
   }
   else{
