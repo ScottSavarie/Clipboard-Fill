@@ -25,7 +25,6 @@ Stijn and I made this out of frustration one day when we had to copy and paste a
 
 ## Some Other Sketch Plugins I've made
 [Stacker - Quicly stack things horizontally or vertically](https://github.com/ScottSavarie/stacker)
-
 [Enumerator - Rename and number your artboards or layers based on their x,y position](https://github.com/ScottSavarie/Enumerator)
 
 
