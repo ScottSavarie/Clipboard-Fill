@@ -20,5 +20,11 @@ Sketch plugin to paste whatever image is on your clipboard as the fill for any s
 Scott: [@ScottSavarie](https://www.twitter.com/scottsavarie)
 Stijn: [@StijnEversdijk](https://www.twitter.com/StijnEversdijk)
 
-### Credit
 Stijn and I made this out of frustration one day when we had to copy and paste a lot of images into lists. 
+
+
+## Some Other Sketch Plugins I've made
+[Stacker - Quicly stack things horizontally or vertically](https://github.com/ScottSavarie/stacker)
+[Enumerator - Rename your artboards or layers with an incrementing number based on their x,y position](https://github.com/ScottSavarie/Enumerator)
+
+
