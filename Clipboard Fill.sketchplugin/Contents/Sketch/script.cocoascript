@@ -11,7 +11,13 @@ if(selectedLayers.count() > 0){
       var fill = layer.style().fills().firstObject();
       fill.setFillType(4);
       image = [[NSImage alloc] initWithData:imgData];
-      fill.setImage(MSImageData.alloc().initWithImage_convertColorSpace(image, false));
+      if (MSApplicationMetadata.metadata().appVersion < 47) {
+        fill.setImage(MSImageData.alloc().initWithImage_convertColorSpace(image, false));
+      }
+      else {
+        fill.setImage(MSImageData.alloc().initWithImage(image));
+      }
+
       layer.style().fills().firstObject().setPatternFillType(1);
 
     }
@@ -22,7 +28,12 @@ if(selectedLayers.count() > 0){
       var fill = layer.style().fills().firstObject();
       fill.setFillType(4);
       image = [[NSImage alloc] initWithData:imgTiffData];
-      fill.setImage(MSImageData.alloc().initWithImage_convertColorSpace(image, false));
+      if (MSApplicationMetadata.metadata().appVersion < 47) {
+        fill.setImage(MSImageData.alloc().initWithImage_convertColorSpace(image, false));
+      }
+      else {
+        fill.setImage(MSImageData.alloc().initWithImage(image));
+      }
       layer.style().fills().firstObject().setPatternFillType(1);
     }
   }
